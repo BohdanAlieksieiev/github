@@ -3,6 +3,7 @@ import UserBlock from '../../components/User/UserBlock/UserBlock';
 import classes from './Index.module.scss';
 import axios from 'axios';
 import { IUsers } from '../../type/type';
+
 import Model from '../../components/Model/Model';
 
 const Index: React.FC = () => {

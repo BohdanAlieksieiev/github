@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Model.module.scss';
 import ContentModel from '../ContentModel/ContentModel';
-import axios from 'axios';
+import axios from 'axios'; 
 import { IUser } from '../../type/type';
 
 const Model: React.FC<{

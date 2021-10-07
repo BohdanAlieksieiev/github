@@ -1,0 +1,68 @@
+$my_transition: .25s;
+
+.user_block_section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d1117;
+    color: #c9cfd3;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 24px;
+    transition: $my_transition;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(
+            180deg, #0d111700, #0d1117),linear-gradient(
+            70deg, #388bfd26 32%, #2ea04326);
+        color: gray;
+        border-radius: 10px;
+
+        .avatar_image {
+            width: 110px;
+            height: 110px;
+        }
+    }
+}
+
+.avatar_image {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+    border-radius: 50%;
+    transition: $my_transition;
+}
+
+.left_info_user {
+    display: flex;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+    // justify-content: space-around;
+}
+
+.github_link {
+    transition: $my_transition;
+    &:hover {
+        color: #58a6ff;
+    }
+}
+
+.github_name {
+    transition: $my_transition;
+    &:hover {
+        color: white;
+    }
+}
+
+.add_inf {
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: rgb(60, 62, 223);
+    }
+}

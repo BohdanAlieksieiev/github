@@ -72,7 +72,7 @@ const ContentModel: React.FC<{
               </>
             );
           })}
-          {searchRepos.length == 0 && (
+          {searchRepos.length === 0 && (
             <>
               <div className={classes.found_status}>Repository not found</div>
             </>

@@ -66,7 +66,7 @@ const Index: React.FC = () => {
               </div>
             );
           })}
-          {searchUsers.length == 0 && (
+          {searchUsers.length === 0 && (
             <>
               <div className={classes.found_status}>User not found</div>
             </>

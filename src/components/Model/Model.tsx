@@ -11,10 +11,14 @@ const Model: React.FC<{
   const [userData, setUserData] = useState<IUser>();
 
   useEffect(() => {
-    axios.get<IUser>('https://api.github.com/users/' + modalLogin).then((res) => {
+    getUser();
+  }, []);
+
+  const getUser = async () => {
+    await axios.get<IUser>('https://api.github.com/users/' + modalLogin).then((res) => {
       setUserData(res.data);
     });
-  }, []);
+  }
 
   return (
     <>

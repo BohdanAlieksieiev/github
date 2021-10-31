@@ -22,6 +22,7 @@ const ContentModel: React.FC<{
       setRepos(res.data);
       setSearchRepos(res.data);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const HandleSearch = (text: string): void => {

@@ -3,7 +3,7 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-  switch (action.type) {
+  switch (action.type) { 
     case 'SET_USERS':
       return (state.users = action.users);
     default:
